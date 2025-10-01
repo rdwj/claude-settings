@@ -8,9 +8,15 @@ This directory contains specialized AI subagents for Claude Code. Each subagent 
 
 ### Architecture & Design
 - `solution-architect.md` - High-level architectural decisions and technology stack recommendations
-- `proposal-writer.md` - Create comprehensive technical proposals
+- `proposal-writer.md` - Create comprehensive technical proposals from ideas, sketches, and tech-stack
 - `architecture-reviewer.md` - Validate proposals against project architecture
 - `microservices-architect.md` - Microservices patterns and distributed systems
+
+### Business & Documentation
+- `pitch-writer.md` - Create persuasive investment/approval pitches from project ideas
+- `brief-writer.md` - Create formal project briefings for stakeholders
+- `documentation-architect.md` - Create and improve technical documentation
+- `research-analyst.md` - GitHub and market research for technology decisions
 
 ### Security
 - `security-compliance-scanner.md` - Security vulnerability analysis and FIPS compliance
@@ -25,9 +31,6 @@ This directory contains specialized AI subagents for Claude Code. Each subagent 
 
 ### Testing & Quality
 - `test-execution-analyst.md` - Design and analyze testing strategies
-
-### Documentation
-- `documentation-architect.md` - Create and improve technical documentation
 
 ### Deployment & Operations
 - `openshift-deployment-engineer.md` - OpenShift deployment manifests and GitOps
