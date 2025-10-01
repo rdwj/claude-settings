@@ -1,0 +1,33 @@
+[allowlist]
+  description = "Global Allowlist"
+
+  # Ignore based on any subset of the file path
+  paths = [
+    # Ignore all example certs
+    '''\/example.*\.pem$''',
+
+    # Ignore anything with the word funkymonkey anywhere in the path
+    '''funkymonkey''',
+
+    # Ignore some long path
+    '''examples\/some\/long\/path\/server.key$''',
+
+    # Ignore agent documentation files with test code examples
+    '''agents\/.*\.md$''',
+  ]
+
+  # Ignore based on any subset of the line
+  regexes = [
+    # Ignore lines containing pickles
+    '''pickles''',
+
+    # Ignore test fixture passwords and example credentials
+    '''password.*['"]\s*['"]\s*$''',
+    '''password.*Pass123''',
+    '''SecurePass123''',
+    '''SecureP@ss123''',
+
+    # Ignore documentation placeholders for private keys
+    '''# Your (private key|certificate) here''',
+    '''-----BEGIN PRIVATE KEY-----.*# Your''',
+  ]
