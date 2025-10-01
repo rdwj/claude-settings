@@ -19,6 +19,82 @@ project-management/
 
 Use bash commands to check for existing directories/files before creating them to ensure non-destructive execution.
 
+## IMPORTANT: Project-Level CLAUDE.md Configuration
+
+After creating the project management structure, you MUST add project-specific instructions to the project's CLAUDE.md file. This ensures all Claude Code sessions in this project will follow the workflow rules.
+
+**Steps:**
+
+1. Check if `CLAUDE.md` exists in the project root (current working directory)
+2. If it doesn't exist, create it with the project management instructions below
+3. If it does exist, check if it already contains a "# Project Management Workflow" section
+4. If the section doesn't exist, append it to the end of the existing CLAUDE.md
+5. If the section exists, skip this step to avoid duplication
+
+**Content to add to CLAUDE.md:**
+
+````markdown
+# Project Management Workflow
+
+This project uses a file-based project management system. **ALL work MUST follow this workflow.**
+
+## Critical Rules for Claude Code
+
+### Before Starting Any Work
+
+1. Check `project-management/backlog/` for work items
+2. When starting work on an item, you MUST run:
+   ```bash
+   ./project-management/scripts/promote.sh [filename] in-progress
+   ```
+
+### During Work
+
+1. If you encounter a blocker, you MUST immediately run:
+   ```bash
+   ./project-management/scripts/promote.sh [filename] blocked
+   ```
+2. Add a note to the work item explaining what's blocking progress
+
+### After Completing Work
+
+1. When work is complete, you MUST run:
+   ```bash
+   ./project-management/scripts/promote.sh [filename] ready-for-human-review
+   ```
+2. **DO NOT consider a task complete until the file is in `ready-for-human-review/`**
+
+### Workflow States
+
+- `backlog/` - Identified work not yet started
+- `in-progress/` - Currently working on
+- `blocked/` - Cannot proceed due to dependencies or issues
+- `ready-for-human-review/` - Complete, awaiting human approval
+- `done/` - Approved and completed (human moves here)
+
+### State Transitions You Must Execute
+
+- Starting work: `backlog` → `in-progress`
+- Hit blocker: `in-progress` → `blocked`
+- Complete work: `in-progress` → `ready-for-human-review`
+- Unblocked: `blocked` → `in-progress`
+
+### Finding Work Items
+
+Before asking the user what to work on, check these locations:
+1. `project-management/in-progress/` - Any items here need completion
+2. `project-management/blocked/` - Check if you can now unblock any items
+3. `project-management/backlog/` - New work to start
+
+### Complete Documentation
+
+Read `project-management/PROJECT-MANAGEMENT-RULES.md` for the full workflow specification.
+
+## Reminder
+
+**YOU MUST USE THE PROMOTION SCRIPT** at the appropriate points. The human is relying on you to manage file locations correctly. Forgetting to promote files breaks the workflow.
+````
+
 ## File Contents
 
 ### `project-management/README.md`
