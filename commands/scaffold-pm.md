@@ -12,7 +12,7 @@ project-management/
 │   └── promote.sh
 ├── backlog/
 ├── in-progress/
-├── ready-for-human-review/
+├── ready-for-review/
 ├── done/
 └── blocked/
 ```
@@ -60,23 +60,23 @@ This project uses a file-based project management system. **ALL work MUST follow
 
 1. When work is complete, you MUST run:
    ```bash
-   ./project-management/scripts/promote.sh [filename] ready-for-human-review
+   ./project-management/scripts/promote.sh [filename] ready-for-review
    ```
-2. **DO NOT consider a task complete until the file is in `ready-for-human-review/`**
+2. **DO NOT consider a task complete until the file is in `ready-for-review/`**
 
 ### Workflow States
 
 - `backlog/` - Identified work not yet started
 - `in-progress/` - Currently working on
 - `blocked/` - Cannot proceed due to dependencies or issues
-- `ready-for-human-review/` - Complete, awaiting human approval
-- `done/` - Approved and completed (human moves here)
+- `ready-for-review/` - Complete, awaiting approval
+- `done/` - Approved and completed
 
 ### State Transitions You Must Execute
 
 - Starting work: `backlog` → `in-progress`
 - Hit blocker: `in-progress` → `blocked`
-- Complete work: `in-progress` → `ready-for-human-review`
+- Complete work: `in-progress` → `ready-for-review`
 - Unblocked: `blocked` → `in-progress`
 
 ### Finding Work Items
@@ -108,7 +108,7 @@ This directory contains a file-based project management system for tracking work
 
 - **backlog/**: Work items that have been identified but not yet started
 - **in-progress/**: Work items currently being worked on
-- **ready-for-human-review/**: Completed work awaiting human review and approval
+- **ready-for-review/**: Completed work awaiting review and approval
 - **done/**: Completed and approved work items
 - **blocked/**: Work items that are blocked by dependencies or issues
 
@@ -117,7 +117,7 @@ This directory contains a file-based project management system for tracking work
 Work items flow through these states:
 
 ```
-backlog → in-progress → ready-for-human-review → done
+backlog → in-progress → ready-for-review → done
               ↓              ↓
            blocked    →  in-progress (rework)
 ```
@@ -134,7 +134,7 @@ Use the `scripts/promote.sh` script to move items between directories:
 ./scripts/promote.sh STORY-123.md blocked
 
 # Complete work and request review
-./scripts/promote.sh STORY-123.md ready-for-human-review
+./scripts/promote.sh STORY-123.md ready-for-review
 
 # Move to done after approval
 ./scripts/promote.sh STORY-123.md done
@@ -212,9 +212,9 @@ You MUST use the promotion script at these specific points:
 3. **Completing Work**
    - AFTER completing all work on an item in `in-progress/`, you MUST run:
      ```bash
-     ./project-management/scripts/promote.sh [filename] ready-for-human-review
+     ./project-management/scripts/promote.sh [filename] ready-for-review
      ```
-   - Do NOT consider the task complete until the file has been moved to `ready-for-human-review/`
+   - Do NOT consider the task complete until the file has been moved to `ready-for-review/`
 
 4. **Returning from Blocked**
    - When you resume work on a blocked item, you MUST run:
@@ -225,7 +225,7 @@ You MUST use the promotion script at these specific points:
 ### For Human Reviewers
 
 1. **Approving Work**
-   - After reviewing and approving work in `ready-for-human-review/`, run:
+   - After reviewing and approving work in `ready-for-review/`, run:
      ```bash
      ./project-management/scripts/promote.sh [filename] done
      ```
@@ -243,10 +243,10 @@ Valid transitions:
 
 - `backlog` → `in-progress` (start work)
 - `in-progress` → `blocked` (hit blocker)
-- `in-progress` → `ready-for-human-review` (complete work)
+- `in-progress` → `ready-for-review` (complete work)
 - `blocked` → `in-progress` (unblocked, resume work)
-- `ready-for-human-review` → `done` (approved by human)
-- `ready-for-human-review` → `in-progress` (changes requested by human)
+- `ready-for-review` → `done` (approved)
+- `ready-for-review` → `in-progress` (changes requested)
 
 ## YAML Frontmatter Requirements
 
@@ -298,7 +298,7 @@ When marking an item as blocked:
 
 ## Review Process
 
-Items in `ready-for-human-review/`:
+Items in `ready-for-review/`:
 
 - Must be complete according to acceptance criteria
 - Should include notes on implementation decisions
@@ -307,7 +307,7 @@ Items in `ready-for-human-review/`:
 
 ## Critical Reminder for Claude Code
 
-**DO NOT FORGET**: After you complete work on ANY task from `in-progress/`, you MUST promote it to `ready-for-human-review/` using the script. This is NOT optional. The human is relying on you to move files correctly.
+**DO NOT FORGET**: After you complete work on ANY task from `in-progress/`, you MUST promote it to `ready-for-review/` using the script. This is NOT optional. The human is relying on you to move files correctly.
 
 If you are unsure whether work is complete, ask the human before promoting.
 ```
@@ -333,7 +333,7 @@ NC='\033[0m' # No Color
 PM_BASE="project-management"
 
 # Valid target directories
-VALID_DIRS=("backlog" "in-progress" "ready-for-human-review" "done" "blocked")
+VALID_DIRS=("backlog" "in-progress" "ready-for-review" "done" "blocked")
 
 # Function to print error and exit
 error_exit() {

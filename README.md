@@ -132,7 +132,7 @@ This workflow system provides:
 
 **`/approve {{file}}`** - Finalize completed work
 
-- Promotes story from `ready-for-human-review` to `done`
+- Promotes story from `ready-for-review` to `done`
 - Confirms all acceptance criteria are met
 
 ### 6. Utility Commands
@@ -152,7 +152,7 @@ File-based workflow with automatic state tracking:
 project-management/
 ├── backlog/              # Work items not yet started
 ├── in-progress/          # Currently being worked on
-├── ready-for-human-review/  # Completed, awaiting approval
+├── ready-for-review/     # Completed, awaiting approval
 ├── done/                 # Completed and approved
 ├── blocked/              # Blocked by dependencies or issues
 └── scripts/
@@ -166,7 +166,7 @@ project-management/
 ./project-management/scripts/promote.sh story-123.md in-progress
 
 # Mark as ready for review after completion
-./project-management/scripts/promote.sh story-123.md ready-for-human-review
+./project-management/scripts/promote.sh story-123.md ready-for-review
 
 # Approve and move to done
 ./project-management/scripts/promote.sh story-123.md done
@@ -342,7 +342,7 @@ In your project directory:
 /scaffold-pm
 
 # Or manually create structure
-mkdir -p project-management/{backlog,in-progress,ready-for-human-review,done,blocked,scripts}
+mkdir -p project-management/{backlog,in-progress,ready-for-review,done,blocked,scripts}
 ```
 
 ## Best Practices
@@ -413,8 +413,8 @@ The command provides interactive dialog to help choose the best strategy and det
 1. Stories start in `backlog/`
 2. Promote to `in-progress/` when starting work
 3. If blocked, promote to `blocked/` immediately and document why
-4. When complete, promote to `ready-for-human-review/`
-5. After human approval, promote to `done/`
+4. When complete, promote to `ready-for-review/`
+5. After approval, promote to `done/`
 
 ### Code Reuse
 
