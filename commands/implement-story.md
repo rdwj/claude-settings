@@ -1,6 +1,17 @@
 # Implement User Story
 
+{% if file %}
 Please implement the user story at `{{file}}` by first scaffolding the code structure and then filling in the implementation.
+{% else %}
+Please implement all user stories in the backlog by first scaffolding the code structure and then filling in the implementation.
+
+**IMPORTANT**:
+- Find all story files in the backlog directory (look for `backlog/`, `stories/backlog/`, or similar)
+- Launch up to 6 story implementations in parallel using the Task tool
+- For each story, follow the two-phase process below (scaffolding then implementation)
+- Use a single message with multiple Task tool calls to maximize parallelism
+- Track progress and handle any blockers that arise
+{% endif %}
 
 ## Process
 
@@ -40,6 +51,13 @@ As work progresses:
 
 When complete, provide:
 
+{% if file %}
 - Summary of all files created or modified
 - Confirmation that all acceptance criteria have been met
 - Any notes about implementation decisions or trade-offs made
+{% else %}
+- Summary of all stories processed and their completion status
+- List of files created or modified across all stories
+- Any blockers encountered during parallel implementation
+- Stories that require human review or additional attention
+{% endif %}
