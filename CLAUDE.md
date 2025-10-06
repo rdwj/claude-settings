@@ -71,6 +71,7 @@ This document defines the standard development practices, architecture decisions
 - **Agent frameworks**: LangChain/LangGraph or Meta LlamaStack
 - **Embedding models**: Must be vLLM-compatible
 - **Document processing**: Use Docling
+  - **Exception for S1000D/XML-heavy projects**: For S1000D or other XML-heavy technical documentation where hierarchical structure preservation is critical, consider **xml-analysis-framework** (https://github.com/redhat-ai-americas/xml-analysis-framework) for specialized XML parsing with hierarchical chunking. This framework provides 29+ specialized XML handlers, element path tracking, and preserves procedure → step → substep structure essential for technical maintenance documentation.
 - **Model deployment**:
   - Local SLMs for sensitive data
   - OpenShift AI Models for enterprise
@@ -223,7 +224,7 @@ Before starting any project:
 - [ ] Search for latest package versions (don't use training data)
 - [ ] Confirm Red Hat UBI base images only
 - [ ] Choose FastAPI over Flask for new projects
-- [ ] Use Docling for document processing
+- [ ] Use Docling for document processing (or xml-analysis-framework for S1000D/XML-heavy projects)
 - [ ] Ensure embedding models are vLLM-compatible
 - [ ] Use streamable-http for MCP servers (SSE is deprecated)
 - [ ] Create directory structure with shell script

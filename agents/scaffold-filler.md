@@ -1,7 +1,7 @@
 ---
 name: scaffold-filler
 description: Use this agent when you need to implement the actual functionality for code stubs, skeletons, or scaffolds that have been created by the story-scaffolder agent or similar tooling. This agent should be invoked after story-scaffolder has analyzed user stories and created function signatures, class definitions, and method stubs that need implementation. Examples:\n\n<example>\nContext: The story-scaffolder has just created stubs for a user authentication feature.\nuser: "Please implement the user authentication story"\nassistant: "I'll use the Task tool to launch the story-scaffolder agent to create the initial structure."\n<story-scaffolder creates stubs>\nassistant: "Now I'm going to use the scaffold-filler agent to implement the authentication logic in these stubs."\n<uses scaffold-filler agent via Task tool>\n</example>\n\n<example>\nContext: User has stubs for a data processing pipeline that need implementation.\nuser: "The scaffolding is done, now fill in the implementation"\nassistant: "I'll launch the scaffold-filler agent to implement the data processing functions."\n<uses scaffold-filler agent via Task tool>\n</example>\n\n<example>\nContext: After story analysis, multiple stub files exist that need implementation.\nuser: "Complete the implementation for the payment processing stubs"\nassistant: "I'm going to use the scaffold-filler agent to implement the payment processing logic in the existing stubs."\n<uses scaffold-filler agent via Task tool>\n</example>
-tools: Glob, Grep, Read, WebFetch, TodoWrite, WebSearch, BashOutput, KillShell, Edit, Write, NotebookEdit
+tools: Bash, Glob, Grep, Read, WebFetch, TodoWrite, WebSearch, BashOutput, KillShell, Edit, Write, NotebookEdit
 model: sonnet
 color: red
 ---
