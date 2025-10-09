@@ -1,0 +1,255 @@
+[DEBUG] Watching for changes in setting files /Users/wjackson/.claude/settings.json, /Users/wjackson/Developer/AGENTS/nutrition-agent/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(mkdir:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/wjackson/.zshrc
+[DEBUG] Snapshots directory: /Users/wjackson/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/wjackson/.claude/shell-snapshots/snapshot-zsh-1759892312982-r8tuxl.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/wjackson/.claude/todos/9c13dd4a-2fa5-4c56-838b-76bf90ad2358-agent-9c13dd4a-2fa5-4c56-838b-76bf90ad2358.json.tmp.40803.1759892312984
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/wjackson/.claude/todos/9c13dd4a-2fa5-4c56-838b-76bf90ad2358-agent-9c13dd4a-2fa5-4c56-838b-76bf90ad2358.json.tmp.40803.1759892312984 to /Users/wjackson/.claude/todos/9c13dd4a-2fa5-4c56-838b-76bf90ad2358-agent-9c13dd4a-2fa5-4c56-838b-76bf90ad2358.json
+[DEBUG] File /Users/wjackson/.claude/todos/9c13dd4a-2fa5-4c56-838b-76bf90ad2358-agent-9c13dd4a-2fa5-4c56-838b-76bf90ad2358.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892313066
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123387 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892313066 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+[DEBUG] Agent file /Users/wjackson/.claude/agents/README.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/wjackson/.claude/agents/README.md: Missing required "name" field in frontmatter
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/wjackson/.claude/skills, project=/Users/wjackson/Developer/AGENTS/nutrition-agent/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892313254
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123387 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892313254 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892313569
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123387 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892313569 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892313674
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123282 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892313674 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892313728
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123282 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892313728 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=undefined
+[DEBUG] Skipping plugin installations - ENABLE_PLUGINS not set
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892313843
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123387 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892313843 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "ide": Successfully connected to ws-ide server in 31ms
+[DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.0.1"}}
+[DEBUG] Shell snapshot created successfully (140991 bytes)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 45b249a1-2aa1-44b2-b080-8e620d288616, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892320259
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123490 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892320259 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 90ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892332225
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123490 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892332225 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892332293
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123490 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892332293 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 35ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 4a41cb47-eb10-439b-8697-db6f2724a1b3
+[DEBUG] FileHistory: Added snapshot for 4a41cb47-eb10-439b-8697-db6f2724a1b3, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892336346
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123574 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892336346 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 89ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892339621
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123574 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892339621 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892339686
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123574 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892339686 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 28ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 23109e2d-7c4c-457d-bf8e-45f4dda3d70c
+[DEBUG] FileHistory: Added snapshot for 23109e2d-7c4c-457d-bf8e-45f4dda3d70c, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892342850
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123654 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892342850 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 86ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892346579
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123654 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892346579 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892346646
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123654 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892346646 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 37ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message bc18c892-8246-41b2-be45-ac7f35cb41af
+[DEBUG] FileHistory: Added snapshot for bc18c892-8246-41b2-be45-ac7f35cb41af, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892361229
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123779 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892361229 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 95ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892364467
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123779 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892364467 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892364525
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123779 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892364525 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/wjackson/.claude/shell-snapshots/snapshot-zsh-1759892312982-r8tuxl.sh
+[DEBUG] FileHistory: Making snapshot for message 2fd4a3b0-4b96-4698-94f9-179cf2a17c6f
+[DEBUG] FileHistory: Added snapshot for 2fd4a3b0-4b96-4698-94f9-179cf2a17c6f, tracking 0 files
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892366926
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892366926 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892367020
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5123862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892367020 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.40803.1759892367096
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5124277 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.40803.1759892367096 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
