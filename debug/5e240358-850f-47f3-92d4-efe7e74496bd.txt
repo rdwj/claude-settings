@@ -1,0 +1,319 @@
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: mermaid
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.36622.1760021024286
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5507715 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.36622.1760021024286 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 694bcfb6-3c17-4aa6-aae1-038deeca373b
+[DEBUG] FileHistory: Added snapshot for 694bcfb6-3c17-4aa6-aae1-038deeca373b, tracking 5 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.36622.1760021128633
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5508264 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.36622.1760021128633 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 115ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 55ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 75ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] MCP server "ide": Calling MCP tool: openDiff
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (30s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (60s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (90s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (120s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (150s elapsed)
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 58ms
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 10ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/.claude/README.md
+[DEBUG] Writing to temp file: /Users/wjackson/.claude/README.md.tmp.36622.1760021311806
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20994 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude/README.md.tmp.36622.1760021311806 to /Users/wjackson/.claude/README.md
+[DEBUG] File /Users/wjackson/.claude/README.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'openDiff' completed successfully in 2m 32s
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 89ms
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 19ms
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/.claude/commands/workflow.md
+[DEBUG] Writing to temp file: /Users/wjackson/.claude/commands/workflow.md.tmp.36622.1760021331726
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 8296 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude/commands/workflow.md.tmp.36622.1760021331726 to /Users/wjackson/.claude/commands/workflow.md
+[DEBUG] File /Users/wjackson/.claude/commands/workflow.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 72ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+[DEBUG] Writing to temp file: /Users/wjackson/.claude/commands/workflow.md.tmp.36622.1760021339561
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 8428 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude/commands/workflow.md.tmp.36622.1760021339561 to /Users/wjackson/.claude/commands/workflow.md
+[DEBUG] File /Users/wjackson/.claude/commands/workflow.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 71ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] Writing to temp file: /Users/wjackson/.claude/commands/workflow.md.tmp.36622.1760021348817
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 8886 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude/commands/workflow.md.tmp.36622.1760021348817 to /Users/wjackson/.claude/commands/workflow.md
+[DEBUG] File /Users/wjackson/.claude/commands/workflow.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 71ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 94ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 50bfb41e-1036-40dc-99e9-b3ffa216ba50
+[DEBUG] FileHistory: Added snapshot for 50bfb41e-1036-40dc-99e9-b3ffa216ba50, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.36622.1760021682186
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5510240 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.36622.1760021682186 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 127ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: pwd
+[DEBUG] Bash tool description: Get current working directory
+[DEBUG] Bash tool invoked with command: ls -la
+[DEBUG] Bash tool description: List directory contents
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 72ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/wjackson/.claude/shell-snapshots/snapshot-zsh-1760021019353-0tj3la.sh
+[DEBUG] FileHistory: Making snapshot for message 9dde6f0c-9c80-4542-9786-daa427c60329
+[DEBUG] FileHistory: Added snapshot for 9dde6f0c-9c80-4542-9786-daa427c60329, tracking 7 files
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.36622.1760021751370
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5510323 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.36622.1760021751370 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.36622.1760021751486
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5510748 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.36622.1760021751486 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically

@@ -26,7 +26,7 @@ This workflow system provides:
 - Supports project renaming as ideas evolve
 - Ends with encouragement to take time away and return fresh
 
-**`/pitch {{file}}`** - Create investor/management pitch (optional)
+**`/pitch {{file}}`** - Create stakeholder/management pitch - similar to what you would show an investor or senior executive (optional)
 
 - Reads from `ideas/[project]/`
 - Persuasive document for funding or approval
@@ -267,7 +267,7 @@ Custom slash commands are defined as Markdown files in the `commands/` directory
 
 #### Ideation Phase
 - **`/imagine`** - Explore and formulate project ideas through iterative dialog
-- **`/pitch`** - Create investor/management pitch from ideas
+- **`/pitch`** - Create stakeholder/management pitch from ideas
 - **`/brief`** - Create structured project briefing from ideas
 
 #### Architecture Phase
@@ -344,6 +344,64 @@ In your project directory:
 # Or manually create structure
 mkdir -p project-management/{backlog,in-progress,ready-for-review,done,blocked,scripts}
 ```
+
+## New: Interactive Design Workflow (Experimental)
+
+An alternative approach to `/sketch` → `/tech-stack` → `/propose` for teams who prefer iterative, conversation-driven design:
+
+### Design Commands
+
+**`/design`** - Interactive diagram creation
+- Conversational design session (like whiteboarding with a colleague)
+- Creates simple Mermaid diagrams iteratively
+- Evolves within the same session based on your input
+- Saves to `design/diagrams/[name].md`
+
+**`/concept`** - Create 1-2 page concept document
+- Generates `design/concept.md` based on diagrams
+- Explains problem, solution, key capabilities
+- References diagrams instead of repeating them
+
+**`/through-line`** - Define MVP critical path
+- Identifies "one thread all the way through"
+- Documents what must work to prove the concept
+- Saves to `design/through-line.md`
+- Explicitly separates "must have now" from "can come later"
+
+**`/parking-lot`** - Capture future ideas
+- Stores non-critical ideas in `design/parking-lot.md`
+- Organized by category (Features, Optimizations, Integrations, etc.)
+- Keeps valuable ideas visible without cluttering the critical path
+
+**`/architecture`** - Generate ARCHITECTURE.md
+- Reads all design artifacts from `design/`
+- Creates canonical architecture document at project root
+- Captures decisions, rationale, component boundaries
+- References design docs instead of duplicating
+
+### When to Use This Workflow
+
+This approach works well when:
+- You want conversational, iterative design (vs. single-pass generation)
+- You're thinking through architecture in real-time
+- You need the "napkin sketch" experience with AI
+- Multiple people will iterate on designs over days/weeks
+
+### Directory Structure
+
+```
+design/
+├── diagrams/           # Mermaid diagrams created with /design
+├── concept.md          # 1-2 page "what we're building"
+├── through-line.md     # MVP critical path
+└── parking-lot.md      # Future ideas and enhancements
+
+ARCHITECTURE.md         # Canonical architecture (generated from design/)
+```
+
+### Status
+
+**Experimental**: This workflow is being refined based on team feedback. The original workflow (`/imagine` → `/sketch` → `/tech-stack` → `/propose`) remains the primary supported approach.
 
 ## Best Practices
 

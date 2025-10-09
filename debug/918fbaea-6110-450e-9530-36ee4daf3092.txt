@@ -143,3 +143,195 @@
 [DEBUG] Getting matching hook commands for Notification with query: undefined
 [DEBUG] Found 0 hook matchers in settings
 [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 48ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message aa164d0a-4598-4764-afe6-d2fbd819ef9d
+[DEBUG] FileHistory: Added snapshot for aa164d0a-4598-4764-afe6-d2fbd819ef9d, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760021305375
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5509099 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760021305375 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 119ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760021321234
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5509099 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760021321234 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760021321316
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5509099 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760021321316 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 43ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 9bf8b36e-3f24-40e9-b8de-3402170d5392
+[DEBUG] FileHistory: Added snapshot for 9bf8b36e-3f24-40e9-b8de-3402170d5392, tracking 0 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760021601502
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5510153 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760021601502 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 107ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json.tmp.29789.1760021701208
+[DEBUG] Temp file written successfully, size: 97 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json.tmp.29789.1760021701208 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] Stream started - received first chunk
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 40ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: ls -la
+[DEBUG] Bash tool description: Check current directory structure
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 35ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "mkdir:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]

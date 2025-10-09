@@ -16,49 +16,58 @@ Show the complete development workflow and check where the current project stand
 
 ### Step 1: Display the Workflow
 
-Show the user the complete workflow visually:
+Show the user a succinct workflow overview:
 
 ```
 Development Workflow
 ====================
 
-1. IDEATION PHASE
-   /imagine        → Explore ideas iteratively (days/weeks)
-                     Creates: ideas/[project]/
-   ├─→ /pitch      → Investment/approval pitch (optional)
-   └─→ /brief      → Formal stakeholder briefing (optional)
+1. /imagine [project]      → Explore ideas (creates: ideas/[project]/)
+2. /sketch [project]       → Architecture design (creates: sketches/[project]-sketch.md)
+3. /tech-stack [project]   → Choose technologies (creates: tech-stack/[project]-tech-stack.md)
+4. /propose [project]      → Technical proposal (creates: proposals/[project]-proposal.md)
+5. /write-stories {{file}} → User stories (creates: project-management/backlog/*.md)
+6. /implement-story {{file}}→ Build & review (moves through: backlog → in-progress → done)
 
-2. ARCHITECTURE PHASE
-   /sketch         → Create architectural design
-                     Creates: sketches/[project]-sketch.md
-   ↓
-   /tech-stack     → Choose frameworks and technologies
-                     Creates: tech-stack/[project]-tech-stack.md
+Optional branches:
+  • /pitch or /brief - After /imagine for approvals
+  • /review → /revise - Validate and refine proposals
+  • /simplify or /break-into-phases - For complex proposals
 
-3. DESIGN PHASE
-   /propose        → Detailed technical proposal
-                     Creates: proposals/[project]-proposal.md
-   ↓
-   /review         → Architecture and security validation
-   ↓
-   /revise         → Update based on reviews
-   ├─→ /simplify   → Reduce complexity if needed
-   └─→ /break-into-phases → Split into phases if complex
+Utility:
+  • /ds - Decompose complex tasks
+  • /scaffold-pm - Set up project management
+```
 
-4. PLANNING PHASE
-   /write-stories  → Generate user stories
-                     Creates: project-management/backlog/*.md
+**New: Interactive Design Workflow (Experimental)**
 
-5. IMPLEMENTATION PHASE
-   /implement-story → Two-phase implementation
-   ↓
-   /post-review    → Code review
-   ↓
-   /approve        → Mark complete
+Alternative to /sketch → /tech-stack → /propose for iterative, conversation-driven design:
 
-UTILITY
-   /ds             → Decompose complex tasks
-   /scaffold-pm    → Set up project management structure
+```
+Interactive Design Commands
+============================
+
+/design              → Conversational diagram creation (iterates in same session)
+                       Creates: design/diagrams/[name].md
+
+/concept             → 1-2 page "what we're building" document
+                       Creates: design/concept.md
+
+/through-line        → Define MVP critical path (the "one thread through")
+                       Creates: design/through-line.md
+
+/parking-lot         → Capture future ideas by category
+                       Creates: design/parking-lot.md
+
+/architecture        → Generate ARCHITECTURE.md from design artifacts
+                       Creates: ARCHITECTURE.md
+
+When to use:
+  • You want iterative, whiteboard-style design conversations
+  • Multiple people iterating over days/weeks
+  • Need to separate MVP from future enhancements upfront
+
+Note: This workflow is experimental. Original workflow remains primary.
 ```
 
 ### Step 2: Check Current Directory
@@ -73,7 +82,9 @@ Analyze what exists in the current working directory:
 5. `proposals/` directory and proposal files
 6. `pitches/` directory and pitch files
 7. `briefs/` directory and brief files
-8. Project management story files in backlog/in-progress/etc.
+8. `design/` directory and artifacts (diagrams/, concept.md, through-line.md, parking-lot.md)
+9. `ARCHITECTURE.md` at project root
+10. Project management story files in backlog/in-progress/etc.
 
 ### Step 3: Present Status Report
 
@@ -126,6 +137,22 @@ Project: [project-name]
 
   → Next step: Run /sketch to create architectural design
   → Or: Run /pitch or /brief if you need approval first
+  → Or: Try /design for interactive, conversation-driven design
+```
+
+#### Interactive Design Artifacts (if using experimental workflow)
+
+If `design/` directory exists:
+
+```
+Design Artifacts:
+  ✓ Diagrams: [N] diagrams in design/diagrams/
+  ✓ Concept document (design/concept.md)
+  ✓ Through-line defined (design/through-line.md)
+  ✓ Parking lot with [N] future ideas
+  ✓ ARCHITECTURE.md at project root
+
+  → Next step: Continue to /propose or /write-stories
 ```
 
 #### Multiple Projects
