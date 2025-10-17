@@ -267,6 +267,11 @@ Before starting any project:
 - Design for multi-team usage and shared services where appropriate
 - Add to memory. "When making changes to a file, do not create a new version of that file unless instructed. Proliferation of various versions of files leads to grand confusion."
 
+## Running Terminal Commands
+
+- If you plan to run a terminal command that might take a long time or have verbose output, such as an OpenShift build, delegate that to a terminal-worker sub agent.
+- An exception to this is if you are running a command and you need to monitor it as it goes in order to learn about some process or to see if the thing works.
+
 ## Date and Time
 
 - If you need to know the current date or time, use the 'date' shell command.

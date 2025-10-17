@@ -338,3 +338,805 @@
 [DEBUG] Getting matching hook commands for Notification with query: undefined
 [DEBUG] Found 0 hook matchers in settings
 [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json.tmp.29789.1760021818038
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 120 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json.tmp.29789.1760021818038 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(mkdir:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: mkdir -p ideas/mcp-test-mcp
+[DEBUG] Bash tool description: Create ideas directory for mcp-test-mcp project
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 43ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: date +"%Y%m%d-%H%M%S"
+[DEBUG] Bash tool description: Get timestamp for conversation file
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 37ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] MCP server "ide": Calling MCP tool: openDiff
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (30s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (60s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (90s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (120s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (150s elapsed)
+[DEBUG] MCP server "ide": Tool 'openDiff' still running (180s elapsed)
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 35ms
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md
+[DEBUG] MCP server "ide": Tool 'openDiff' completed successfully in 3m 8s
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 2ms
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md.tmp.29789.1760022032812
+[DEBUG] Temp file written successfully, size: 1791 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md.tmp.29789.1760022032812 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 67ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/conversation-20251009-095705.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/conversation-20251009-095705.md.tmp.29789.1760022055426
+[DEBUG] Temp file written successfully, size: 2759 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/conversation-20251009-095705.md.tmp.29789.1760022055426 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/conversation-20251009-095705.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/conversation-20251009-095705.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 68ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/research.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/research.md.tmp.29789.1760022084566
+[DEBUG] Temp file written successfully, size: 3784 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/research.md.tmp.29789.1760022084566 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/research.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/research.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 87ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/problem.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/problem.md.tmp.29789.1760022110177
+[DEBUG] Temp file written successfully, size: 3001 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/problem.md.tmp.29789.1760022110177 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/problem.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/problem.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 116ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/vision.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/vision.md.tmp.29789.1760022141230
+[DEBUG] Temp file written successfully, size: 4175 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/vision.md.tmp.29789.1760022141230 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/vision.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/vision.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 115ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/next-steps.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/next-steps.md.tmp.29789.1760022175920
+[DEBUG] Temp file written successfully, size: 5032 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/next-steps.md.tmp.29789.1760022175920 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/next-steps.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/next-steps.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 140ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022193230
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5510748 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022193230 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022193292
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5510748 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022193292 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 140ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message f2942d0f-eb6f-4e39-a095-dd582e5a9697
+[DEBUG] FileHistory: Added snapshot for f2942d0f-eb6f-4e39-a095-dd582e5a9697, tracking 6 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022588642
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512476 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022588642 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 91ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/requirements.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/requirements.md.tmp.29789.1760022640221
+[DEBUG] Temp file written successfully, size: 5321 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/requirements.md.tmp.29789.1760022640221 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/requirements.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/requirements.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 159ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022667688
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512476 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022667688 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022667748
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512476 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022667748 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message 8ad76bc1-a7c9-47a1-b536-2316aa1c8653
+[DEBUG] FileHistory: Added snapshot for 8ad76bc1-a7c9-47a1-b536-2316aa1c8653, tracking 7 files
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022790842
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512557 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022790842 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022790917
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512557 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022790917 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message cfd17a24-ca5e-4f0f-9685-4b4ecd792029
+[DEBUG] FileHistory: Added snapshot for cfd17a24-ca5e-4f0f-9685-4b4ecd792029, tracking 7 files
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022792766
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512639 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022792766 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022792853
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512639 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022792853 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.29789.1760022808796
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5512639 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.29789.1760022808796 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760022895726
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5516567 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760022895726 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760022895792
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5516567 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760022895792 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 0a1419e1-a9a4-4154-bfcc-0e645077f547
+[DEBUG] FileHistory: Added snapshot for 0a1419e1-a9a4-4154-bfcc-0e645077f547, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760022931353
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5516871 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760022931353 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 93ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at wK (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:985)
+    at file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:713
+    at Array.map (<anonymous>)
+    at mX (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:704)
+    at EOB (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:2289:12387)
+    at PC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:32:19415)
+    at $p (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:42814)
+    at G9 (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38355)
+    at qh (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38283)
+    at gC (file:///Users/wjackson/.nvm/versions/node/v18.20.8/lib/node_modules/@anthropic-ai/claude-code/cli.js:34:38137)
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760022957857
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5516871 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760022957857 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760022957935
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5516871 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760022957935 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 46ms
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 40f4b88e-e38b-4a21-a4ea-983ca1935cf0
+[DEBUG] FileHistory: Added snapshot for 40f4b88e-e38b-4a21-a4ea-983ca1935cf0, tracking 7 files
+[DEBUG] MCP server "ide": Calling MCP tool: closeAllDiffTabs
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023039928
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517144 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023039928 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] MCP server "ide": Tool 'closeAllDiffTabs' completed successfully in 111ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] MCP server "ide": Calling MCP tool: openDiff
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 30ms
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-verbosity-example.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-verbosity-example.md.tmp.51281.1760023075971
+[DEBUG] Temp file written successfully, size: 4221 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-verbosity-example.md.tmp.51281.1760023075971 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-verbosity-example.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-verbosity-example.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'openDiff' completed successfully in 3s
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 57ms
+[DEBUG] MCP server "ide": Calling MCP tool: close_tab
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] MCP server "ide": Tool 'close_tab' completed successfully in 23ms
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 6ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/connection-model.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/connection-model.md.tmp.51281.1760023111980
+[DEBUG] Temp file written successfully, size: 5169 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/connection-model.md.tmp.51281.1760023111980 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/connection-model.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/connection-model.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 72ms
+[DEBUG] Getting matching hook commands for PreCompact with query: auto
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "auto" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Executing hooks for SessionStart:compact
+[DEBUG] Getting matching hook commands for SessionStart with query: compact
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "compact" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023200101
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517039 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023200101 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023200164
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517039 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023200164 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023200219
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517039 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023200219 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023200272
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517144 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023200272 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 73ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/workflow-example.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/workflow-example.md.tmp.51281.1760023280680
+[DEBUG] Temp file written successfully, size: 9186 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/workflow-example.md.tmp.51281.1760023280680 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/workflow-example.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/workflow-example.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 97ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 105ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md.tmp.51281.1760023328202
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5974 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md.tmp.51281.1760023328202 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 102ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 5ms
+[DEBUG] FileHistory: Tracked file modification for /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-schemas.md
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-schemas.md.tmp.51281.1760023391565
+[DEBUG] Temp file written successfully, size: 14364 bytes
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-schemas.md.tmp.51281.1760023391565 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-schemas.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/tool-schemas.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 113ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 4ms
+[DEBUG] Writing to temp file: /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md.tmp.51281.1760023399463
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 6074 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md.tmp.51281.1760023399463 to /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md
+[DEBUG] File /Users/wjackson/Developer/MCP/mcp_test_mcp/fastmcp-client-docs/ideas/mcp-test-mcp/README.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] MCP server "ide": Calling MCP tool: getDiagnostics
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] MCP server "ide": Tool 'getDiagnostics' completed successfully in 109ms
+[DEBUG] Slash commands included in SlashCommand tool: /propose, /brief, /simplify, /imagine, /pre-commit, /break-into-phases, /tech-stack, /pitch, /workflow, /sketch, /ds
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023418987
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517144 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023418987 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760023419051
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517144 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760023419051 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/wjackson/.claude/shell-snapshots/snapshot-zsh-1760022889275-uwtiqh.sh
+[DEBUG] FileHistory: Making snapshot for message b1c90ccf-6608-40b4-b920-4b5b9cf0f1d0
+[DEBUG] FileHistory: Added snapshot for b1c90ccf-6608-40b4-b920-4b5b9cf0f1d0, tracking 11 files
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760024047834
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517227 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760024047834 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760024047924
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517227 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760024047924 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/wjackson/.claude.json.tmp.51281.1760024047992
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 5517694 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/wjackson/.claude.json.tmp.51281.1760024047992 to /Users/wjackson/.claude.json
+[DEBUG] File /Users/wjackson/.claude.json written atomically
