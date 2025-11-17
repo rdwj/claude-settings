@@ -17,6 +17,43 @@ This document defines the standard development practices, architecture decisions
   ```
 - **Build Strategy**: Prefer using OpenShift BuildConfig over building and pushing containers locally where possible
 
+### Remote Container Builds
+
+When building containers for OpenShift deployment from a Mac:
+
+**Decision Tree:**
+
+- **Building on Mac for OpenShift?** → Use remote build on ec2-dev
+- **Building on Linux x86_64 for OpenShift?** → Can build locally or remotely
+- **Quick local testing only?** → Can build locally with `--platform linux/amd64`
+- **Production/deployment build?** → Prefer remote build
+
+**How to Execute Remote Builds:**
+
+1. **User-initiated builds**: Use `/build-remote` slash command
+2. **Agent-initiated builds**:
+   - ALWAYS ask user before building: "Should I build this container remotely on ec2-dev?"
+   - If yes, delegate to the `remote-builder` agent using the Task tool
+   - Never build automatically without user approval
+
+**Example Agent Pattern:**
+
+```
+assistant: "I've completed the FastAPI implementation with Containerfile. To deploy
+this to OpenShift, we need to build a container image. Since you're on Mac,
+should I build it remotely on ec2-dev to ensure x86_64 compatibility?"
+
+<wait for user approval>
+
+assistant: "I'll use the remote-builder agent to handle the build."
+<uses Task tool to delegate to remote-builder agent>
+```
+
+**When NOT to use remote builds:**
+- User explicitly requests local build
+- Building multi-architecture images (build locally with `podman manifest`)
+- Testing Containerfile syntax (quick local build sufficient)
+
 ### Security & Compliance
 
 - FIPS compliance may be required - **always ask if unclear**
