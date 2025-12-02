@@ -50,6 +50,7 @@ assistant: "I'll use the remote-builder agent to handle the build."
 ```
 
 **When NOT to use remote builds:**
+
 - User explicitly requests local build
 - Building multi-architecture images (build locally with `podman manifest`)
 - Testing Containerfile syntax (quick local build sufficient)
@@ -224,6 +225,92 @@ pytest -k "test_authentication"
 - **CI/CD**: OpenShift Pipelines (Tekton)
 - **Monitoring**: OpenShift built-in monitoring
 
+## Remote Claude Code Agent System
+
+### Scheduled Agents
+
+For recurring automated tasks, use the scheduling system with `/schedule-agent`:
+
+**Common Use Cases:**
+
+- **Content generation**: Daily AI news digests, research summaries
+- **Security**: Nightly dependency scans, OWASP checks
+- **Maintenance**: Weekly dependency updates, stale branch cleanup
+- **Monitoring**: Periodic performance benchmarks, cost reports
+- **Documentation**: Regular regeneration of API docs, changelogs
+
+**Best Practices:**
+
+- **Idempotency**: Tasks must be safe to run multiple times
+- **State management**: Use files + git commits to track state
+- **Cost awareness**: Set budget limits in task configuration
+- **Quality over quantity**: Daily is better than hourly initially
+- **Human review**: Generate drafts for review, don't auto-publish
+- **Clear logging**: Tasks should log what they're doing
+
+**Task Design Pattern:**
+
+```yaml
+task: |
+  1. Check if work is needed (read state file)
+  2. If no work needed, exit gracefully with code 0
+  3. Do the work
+  4. Update state file (prevent duplicates)
+  5. Commit to git (marks completion)
+  6. Log summary of what was accomplished
+```
+
+**Example: AI News Digest (Hero Project)**
+
+```yaml
+scheduled_tasks:
+  - name: ai-news-digest
+    schedule: "0 9 * * *"  # Daily at 9 AM
+    project: ~/Developer/auto-news
+    task: |
+      1. Read blog/processed-topics.txt for already-covered topics
+      2. Use Tavily API to search AI news (last 24h)
+      3. Filter for quality: technical depth, novel insights
+      4. Ask: "Who is this valuable for and why?"
+      5. Skip if too similar to recent topics or lacks substance
+      6. Research topic deeply, create comprehensive draft
+      7. Generate code examples that readers can actually use
+      8. Create blog/drafts/YYYY-MM-DD-{slug}/ with:
+         - outline.md
+         - abstract.md
+         - full-post.md
+         - code-examples/
+      9. Append topic to processed-topics.txt
+      10. Commit to git with descriptive message
+    permissions: developer
+    env:
+      TAVILY_API_KEY: ${TAVILY_API_KEY}
+```
+
+**Quality Standards for Auto-Generated Content:**
+
+- **Audience**: AI developers/architects/engineers, not enthusiasts
+- **Depth**: Technical substance over hype
+- **No fluff**: Skip press releases, obvious news, fanboy content
+- **Uniqueness**: Ensure topic hasn't been recently covered
+- **Value proposition**: Clear answer to "who needs this and why"
+- **Practical**: Include working code examples
+- **Review required**: All generated content reviewed before publishing
+
+**Scheduling Commands:**
+
+- `/schedule-agent` - Create new scheduled task
+- `/list-scheduled-agents` - View all scheduled tasks
+- Pause: Edit YAML and set `enabled: false`
+- Test: `ssh ec2-dev '~/bin/run-scheduled-task <task-name>'`
+
+**Remote Switching Workflow:**
+
+- `/switch-to-remote` - Hand off current work to remote agent
+- `/switch-to-local` - Retrieve and validate completed remote work
+- `/list-remotes` - Monitor active remote sessions
+- Use for: Bandwidth-constrained environments, heavy research, parallel features
+
 ## MCP Server Publishing Strategy
 
 When creating reusable MCP servers, use this multi-layered approach:
@@ -251,6 +338,18 @@ When creating reusable MCP servers, use this multi-layered approach:
 - Provide command-line tools for easy server creation and management
 - Include examples, API docs, and deployment guides
 - Scripts to generate new MCP server projects with prompts
+
+### 5. Testing
+
+- Use mcp-test-mcp MCP server to test MCP servers.
+- On startup you sometimes do not have access to your configured MCP servers. If you do not see mcp-test-mcp, stop and ask the user to reenable it.
+- You will not be able to directly test MCP servers the way you do with APIs, so this is imperative to have.
+
+### 6. LibreChat Integration Notes
+
+- **Tool list caching**: LibreChat caches the list of available MCP tools. When you add, remove, or modify tools in an MCP server and redeploy, LibreChat may not see the changes immediately.
+- **Restart required**: After deploying MCP server changes that add/remove tools, you may need to restart the LibreChat service for the agent to pick up the new tool list.
+- **Verification**: Use mcp-test-mcp to verify the deployed MCP server has the expected tools before troubleshooting LibreChat issues.
 
 ## Quick Reference Checklist
 
@@ -372,3 +471,5 @@ oc logs my-pod -n my-namespace
 * When using MCP servers, be sure we have a valid MCP client, and let FastMCP auto-detect the transport. Trust the process on this and don't overthink it. This is not the same as a regular API.
 * If I ask you "Can we do X?" I really do just want you to answer that question, giving me enough detail to understand the answer and make a decision. I do NOT mean "answer user briefly and then run off and implement X." This is important because sometimes I may have a follow-up question in mind, or want to discuss implementation steps prior to us actually doing the implementation.
 * Detailed error messages! If a manual or automated test fails the more information you can return back to the model the better, and stuffing extra data in the error message or assertion is a very inexpensive way to do that.
+* If we are working in an OpenShift cluster, always stop and get explicit permission before removing an existing service or app to gain resources. We often work in clusters where I have a lot of apps going on that may not relate to the current project but are still important.
+* When building an MCP server, we usually scaffold these out using `fips-agents create mcp-server our-mcp-server-name` and then you will need to have a TOOLS_PLAN.md with a plan for the tools you want, then cd to the created directory and run `fips-agents generate tool --help` to see how to use the tool generator. You can generate tools, prompts and resources with fips-agents. Then in the generated directory there will be a .claude/commands/implement-mcp-item.md slash command. Follow the guidance in there and use your tool spec to implement and test each tool. MCP deployment using my template is done with `make deploy PROJECT=[project name]` and you should watch for issues with user permissions, tool imports, etc., and be prepared to test the tools and redeploy if needed. You have to have mcp-test-mcp MCP server enabled to test these MCP servers. If you don't see mcp-test-mcp tools, stop and ask and I will enable it for you. Do this before continuing to try to test the deployed MCP server.

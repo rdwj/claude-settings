@@ -1,9 +1,32 @@
 {
   "permissions": {
     "allow": [
-      "Bash(podman pull:*)"
+      "Bash(git checkout:*)",
+      "Bash(git fetch:*)",
+      "Bash(git branch:*)",
+      "Bash(git merge:*)",
+      "Bash(podman pull:*)",
+      "mcp__mcp-test-mcp__connect_to_server",
+      "mcp__mcp-test-mcp__disconnect",
+      "mcp__mcp-test-mcp__get_connection_status",
+      "mcp__mcp-test-mcp__list_tools",
+      "mcp__mcp-test-mcp__call_tool",
+      "mcp__mcp-test-mcp__list_resources",
+      "mcp__mcp-test-mcp__read_resource",
+      "mcp__mcp-test-mcp__list_prompts",
+      "mcp__mcp-test-mcp__get_prompt",
+      "mcp__mcp-test-mcp__execute_prompt_with_llm",
+      "mcp__mcp-test-mcp__health_check",
+      "mcp__mcp-test-mcp__ping",
+      "mcp__mcp-test-mcp__echo",
+      "mcp__mcp-test-mcp__add",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs"
     ],
-    "deny": [],
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
+    ],
     "ask": []
   }
 }
