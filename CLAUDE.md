@@ -1,3 +1,5 @@
+Read AGENTS.md and consider that as additional rules for here.
+
 # Global Development Preferences for Claude Code
 
 This document defines the standard development practices, architecture decisions, and technical preferences for all projects. Always reference these guidelines when providing code examples, architecture suggestions, or project setup guidance.
@@ -90,18 +92,6 @@ assistant: "I'll use the remote-builder agent to handle the build."
 - **Avoid gRPC** unless specifically requested
 - **No early optimization** - get basic functionality working first
 
-### MCP Server Transport Protocols
-
-**For MCP Servers (FastMCP):**
-
-- **STDIO (Default)**: Best for local tools and command-line scripts
-- **HTTP (streamable-http)**: Recommended for web deployments and production (SSE is deprecated)
-
-**For Regular APIs:**
-
-- Standard HTTP/REST for web services
-- Avoid gRPC unless specifically requested
-
 ## AI/ML Technology Stack
 
 ### Frameworks & Models
@@ -119,32 +109,6 @@ assistant: "I'll use the remote-builder agent to handle the build."
 
 - **Data flows**: KubeFlow pipelines for data flows and model development
 - **Experimentation**: OpenShift AI workbenches
-
-## Database Technology Choices
-
-- **Relational**: PostgreSQL
-- **Document**: MongoDB
-- **Graph**: Neo4j
-- **Vector**: PGVector (if using PostgreSQL), Milvus, or Weaviate
-- **Cache**: Redis
-
-## Standard Project Structure
-
-Always create projects with this structure:
-
-```
-project-root/
-├── Containerfile
-├── podman-compose.yml
-├── manifests/
-│   ├── base/
-│   └── overlays/
-├── src/
-├── prompts/                    # YAML-based prompt management
-├── mcp-servers/
-├── agents/
-└── tests/
-```
 
 ### Directory Creation
 
@@ -341,9 +305,8 @@ When creating reusable MCP servers, use this multi-layered approach:
 
 ### 5. Testing
 
-- Use mcp-test-mcp MCP server to test MCP servers.
-- On startup you sometimes do not have access to your configured MCP servers. If you do not see mcp-test-mcp, stop and ask the user to reenable it.
-- You will not be able to directly test MCP servers the way you do with APIs, so this is imperative to have.
+- Use `mcp-test-mcp` to test deployed MCP servers (if not available, ask user to enable it)
+- For detailed testing workflows, see the project's CLAUDE.md when using the mcp-server-template
 
 ### 6. LibreChat Integration Notes
 
@@ -383,14 +346,6 @@ Before starting any project:
 - Make failures obvious and debuggable
 - Provide clear error messages that help developers understand what went wrong
 - Only use mocking when explicitly requested by the human user
-
-### MCP Server Development
-
-- Default to STDIO transport for local development
-- Use HTTP (streamable-http) transport for production deployments
-- Structure prompts in YAML files within `prompts/` directory
-- Implement proper variable substitution and validation
-- Include reload capabilities for prompt management
 
 ## Enterprise Integration Notes
 
@@ -472,4 +427,4 @@ oc logs my-pod -n my-namespace
 * If I ask you "Can we do X?" I really do just want you to answer that question, giving me enough detail to understand the answer and make a decision. I do NOT mean "answer user briefly and then run off and implement X." This is important because sometimes I may have a follow-up question in mind, or want to discuss implementation steps prior to us actually doing the implementation.
 * Detailed error messages! If a manual or automated test fails the more information you can return back to the model the better, and stuffing extra data in the error message or assertion is a very inexpensive way to do that.
 * If we are working in an OpenShift cluster, always stop and get explicit permission before removing an existing service or app to gain resources. We often work in clusters where I have a lot of apps going on that may not relate to the current project but are still important.
-* When building an MCP server, we usually scaffold these out using `fips-agents create mcp-server our-mcp-server-name` and then you will need to have a TOOLS_PLAN.md with a plan for the tools you want, then cd to the created directory and run `fips-agents generate tool --help` to see how to use the tool generator. You can generate tools, prompts and resources with fips-agents. Then in the generated directory there will be a .claude/commands/implement-mcp-item.md slash command. Follow the guidance in there and use your tool spec to implement and test each tool. MCP deployment using my template is done with `make deploy PROJECT=[project name]` and you should watch for issues with user permissions, tool imports, etc., and be prepared to test the tools and redeploy if needed. You have to have mcp-test-mcp MCP server enabled to test these MCP servers. If you don't see mcp-test-mcp tools, stop and ask and I will enable it for you. Do this before continuing to try to test the deployed MCP server.
+* When building an MCP server, scaffold with `fips-agents create mcp-server <name>`, then use the template's slash commands: `/plan-tools` → `/create-tools` → `/exercise-tools` → `/deploy-mcp`. See the project's CLAUDE.md for the full workflow. Each MCP server deploys to its own OpenShift project: `make deploy PROJECT=<server-name>`.
