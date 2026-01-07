@@ -74,6 +74,12 @@ This document defines the standard development practices, architecture decisions
   ```bash
   podman build --platform linux/amd64 -t myapp:latest -f Containerfile . --no-cache
   ```
+- **File Permissions for Containers**: The Write tool creates files with 600 permissions (owner-only). Before building containers for OpenShift, ensure source files have 644 permissions so non-root container users can read them:
+  ```bash
+  chmod 644 src/*.py  # Fix before building
+  ```
+
+  If you forget, the container will crash with `PermissionError` when the non-root user (e.g., user 1001) tries to read Python files.
 - **Build Strategy**: Prefer using OpenShift BuildConfig over building and pushing containers locally where possible
 
 ### Remote Container Builds
@@ -385,6 +391,7 @@ Before starting any project:
 - [ ] Use streamable-http for MCP servers (SSE is deprecated)
 - [ ] Create directory structure with shell script
 - [ ] Use `--platform linux/amd64` when building containers on Mac for OpenShift
+- [ ] Ensure source files have 644 permissions before container builds (`chmod 644 src/*.py`)
 
 ## Code Generation Guidelines
 
@@ -485,3 +492,7 @@ oc logs my-pod -n my-namespace
 * Detailed error messages! If a manual or automated test fails the more information you can return back to the model the better, and stuffing extra data in the error message or assertion is a very inexpensive way to do that.
 * If we are working in an OpenShift cluster, always stop and get explicit permission before removing an existing service or app to gain resources. We often work in clusters where I have a lot of apps going on that may not relate to the current project but are still important.
 * When building an MCP server, scaffold with `fips-agents create mcp-server <name>`, then use the template's slash commands: `/plan-tools` → `/create-tools` → `/exercise-tools` → `/deploy-mcp`. See the project's CLAUDE.md for the full workflow. Each MCP server deploys to its own OpenShift project: `make deploy PROJECT=<server-name>`.
+
+## Capture Lessons Learned
+
+From time to time, as we work on a project, there will be some key lesson learned that we want to capture for the future. However, before we can discuss it, the context sometimes fills up and we lose the detail. So, if you encounter a key lesson learned that will save us time on a future similar project, capture it right then in the project's CLAUDE.md file.
